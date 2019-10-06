@@ -63,12 +63,25 @@ namespace Octopus
             if(ThemeMetroToggle.Checked)
             {
                 this.Theme = MetroFramework.MetroThemeStyle.Dark;
+                VocabularyListMetroLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
+                UserLoginMetroTile.Theme = MetroFramework.MetroThemeStyle.Dark;
+                SettingsMetroTile.Theme = MetroFramework.MetroThemeStyle.Dark;
+                QuizMetroTile.Theme = MetroFramework.MetroThemeStyle.Dark;
+                ExitMetroTile.Theme = MetroFramework.MetroThemeStyle.Dark;
+                AddVocabularyMetroTile.Theme = MetroFramework.MetroThemeStyle.Dark;
             }
             else
             {
                 this.Theme = MetroFramework.MetroThemeStyle.Light;
+                VocabularyListMetroLabel.Theme = MetroFramework.MetroThemeStyle.Light;
+                UserLoginMetroTile.Theme = MetroFramework.MetroThemeStyle.Light;
+                SettingsMetroTile.Theme = MetroFramework.MetroThemeStyle.Light;
+                QuizMetroTile.Theme = MetroFramework.MetroThemeStyle.Light;
+                ExitMetroTile.Theme = MetroFramework.MetroThemeStyle.Light;
+                AddVocabularyMetroTile.Theme = MetroFramework.MetroThemeStyle.Light;
             }
             
         }
+
     }
 }

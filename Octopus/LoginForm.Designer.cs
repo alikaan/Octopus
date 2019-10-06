@@ -34,6 +34,8 @@
             this.PasswordMetroTextBox = new MetroFramework.Controls.MetroTextBox();
             this.LoginMetroButton = new MetroFramework.Controls.MetroButton();
             this.RememberMetroCheckBox = new MetroFramework.Controls.MetroCheckBox();
+            this.NewToOctopusMetroLabel = new MetroFramework.Controls.MetroLabel();
+            this.CreateAccountMetroLabel = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // UsernameMetroTextBox
@@ -86,11 +88,36 @@
             this.RememberMetroCheckBox.Text = "Remember Me";
             this.RememberMetroCheckBox.UseVisualStyleBackColor = true;
             // 
+            // NewToOctopusMetroLabel
+            // 
+            this.NewToOctopusMetroLabel.AutoSize = true;
+            this.NewToOctopusMetroLabel.Location = new System.Drawing.Point(134, 172);
+            this.NewToOctopusMetroLabel.Name = "NewToOctopusMetroLabel";
+            this.NewToOctopusMetroLabel.Size = new System.Drawing.Size(110, 19);
+            this.NewToOctopusMetroLabel.TabIndex = 6;
+            this.NewToOctopusMetroLabel.Text = "New to Octopus?";
+            // 
+            // CreateAccountMetroLabel
+            // 
+            this.CreateAccountMetroLabel.AutoSize = true;
+            this.CreateAccountMetroLabel.CustomForeColor = true;
+            this.CreateAccountMetroLabel.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.CreateAccountMetroLabel.Location = new System.Drawing.Point(246, 172);
+            this.CreateAccountMetroLabel.Name = "CreateAccountMetroLabel";
+            this.CreateAccountMetroLabel.Size = new System.Drawing.Size(115, 19);
+            this.CreateAccountMetroLabel.TabIndex = 7;
+            this.CreateAccountMetroLabel.Text = "Create an account";
+            this.CreateAccountMetroLabel.Click += new System.EventHandler(this.CreateAccountMetroLabel_Click);
+            this.CreateAccountMetroLabel.MouseLeave += new System.EventHandler(this.CreateAccountMetroLabel_MouseLeave);
+            this.CreateAccountMetroLabel.MouseHover += new System.EventHandler(this.CreateAccountMetroLabel_MouseHover);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 177);
+            this.ClientSize = new System.Drawing.Size(375, 211);
+            this.Controls.Add(this.CreateAccountMetroLabel);
+            this.Controls.Add(this.NewToOctopusMetroLabel);
             this.Controls.Add(this.RememberMetroCheckBox);
             this.Controls.Add(this.LoginMetroButton);
             this.Controls.Add(this.PasswordMetroTextBox);
@@ -114,5 +141,7 @@
         private MetroFramework.Controls.MetroTextBox PasswordMetroTextBox;
         private MetroFramework.Controls.MetroButton LoginMetroButton;
         private MetroFramework.Controls.MetroCheckBox RememberMetroCheckBox;
+        private MetroFramework.Controls.MetroLabel NewToOctopusMetroLabel;
+        private MetroFramework.Controls.MetroLabel CreateAccountMetroLabel;
     }
 }
