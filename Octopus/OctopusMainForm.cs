@@ -27,8 +27,8 @@ namespace Octopus
         }
 
         private void ExitMetroTile_Click(object sender, EventArgs e)
-        {                      
-            if(MessageBox.Show(this, "\n\nContinue Exit?", "Octopus Dictionary | Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+        {                                  
+            if(MetroFramework.MetroMessageBox.Show(this, "\n\nContinue Exit?", "Octopus Dictionary | Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
                 Application.Exit();
             }    
@@ -58,29 +58,19 @@ namespace Octopus
             }
         }
 
-        private void ThemeMetroToggle_CheckedChanged(object sender, EventArgs e)
+        private void OctopusMainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(ThemeMetroToggle.Checked)
+            if (e.CloseReason == CloseReason.UserClosing)
             {
-                this.Theme = MetroFramework.MetroThemeStyle.Dark;
-                VocabularyListMetroLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
-                UserLoginMetroTile.Theme = MetroFramework.MetroThemeStyle.Dark;
-                SettingsMetroTile.Theme = MetroFramework.MetroThemeStyle.Dark;
-                QuizMetroTile.Theme = MetroFramework.MetroThemeStyle.Dark;
-                ExitMetroTile.Theme = MetroFramework.MetroThemeStyle.Dark;
-                AddVocabularyMetroTile.Theme = MetroFramework.MetroThemeStyle.Dark;
+                if (MetroFramework.MetroMessageBox.Show(this, "\n\nContinue Exit?", "Octopus Dictionary | Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
             }
-            else
-            {
-                this.Theme = MetroFramework.MetroThemeStyle.Light;
-                VocabularyListMetroLabel.Theme = MetroFramework.MetroThemeStyle.Light;
-                UserLoginMetroTile.Theme = MetroFramework.MetroThemeStyle.Light;
-                SettingsMetroTile.Theme = MetroFramework.MetroThemeStyle.Light;
-                QuizMetroTile.Theme = MetroFramework.MetroThemeStyle.Light;
-                ExitMetroTile.Theme = MetroFramework.MetroThemeStyle.Light;
-                AddVocabularyMetroTile.Theme = MetroFramework.MetroThemeStyle.Light;
-            }
-            
         }
 
     }

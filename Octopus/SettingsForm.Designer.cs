@@ -43,7 +43,7 @@
             this.metroCheckBox1.Size = new System.Drawing.Size(74, 15);
             this.metroCheckBox1.TabIndex = 0;
             this.metroCheckBox1.Text = "Settings 1";
-            this.metroCheckBox1.UseVisualStyleBackColor = true;
+            this.metroCheckBox1.UseSelectable = true;
             // 
             // metroCheckBox2
             // 
@@ -53,7 +53,7 @@
             this.metroCheckBox2.Size = new System.Drawing.Size(74, 15);
             this.metroCheckBox2.TabIndex = 1;
             this.metroCheckBox2.Text = "Settings 2";
-            this.metroCheckBox2.UseVisualStyleBackColor = true;
+            this.metroCheckBox2.UseSelectable = true;
             // 
             // metroCheckBox3
             // 
@@ -63,7 +63,7 @@
             this.metroCheckBox3.Size = new System.Drawing.Size(74, 15);
             this.metroCheckBox3.TabIndex = 2;
             this.metroCheckBox3.Text = "Settings 3";
-            this.metroCheckBox3.UseVisualStyleBackColor = true;
+            this.metroCheckBox3.UseSelectable = true;
             // 
             // SaveSettingsMetroButton
             // 
@@ -72,6 +72,7 @@
             this.SaveSettingsMetroButton.Size = new System.Drawing.Size(75, 23);
             this.SaveSettingsMetroButton.TabIndex = 3;
             this.SaveSettingsMetroButton.Text = "Save";
+            this.SaveSettingsMetroButton.UseSelectable = true;
             // 
             // metroCheckBox4
             // 
@@ -81,7 +82,7 @@
             this.metroCheckBox4.Size = new System.Drawing.Size(74, 15);
             this.metroCheckBox4.TabIndex = 4;
             this.metroCheckBox4.Text = "Settings 4";
-            this.metroCheckBox4.UseVisualStyleBackColor = true;
+            this.metroCheckBox4.UseSelectable = true;
             // 
             // SettingsForm
             // 
@@ -93,6 +94,7 @@
             this.Controls.Add(this.metroCheckBox3);
             this.Controls.Add(this.metroCheckBox2);
             this.Controls.Add(this.metroCheckBox1);
+            this.MaximizeBox = false;
             this.Name = "SettingsForm";
             this.Resizable = false;
             this.Text = "Settings";

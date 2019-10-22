@@ -46,10 +46,33 @@
             // 
             // VocabularyMetroTextBox
             // 
+            // 
+            // 
+            // 
+            this.VocabularyMetroTextBox.CustomButton.Image = null;
+            this.VocabularyMetroTextBox.CustomButton.Location = new System.Drawing.Point(110, 1);
+            this.VocabularyMetroTextBox.CustomButton.Name = "";
+            this.VocabularyMetroTextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.VocabularyMetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.VocabularyMetroTextBox.CustomButton.TabIndex = 1;
+            this.VocabularyMetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.VocabularyMetroTextBox.CustomButton.UseSelectable = true;
+            this.VocabularyMetroTextBox.CustomButton.Visible = false;
+            this.VocabularyMetroTextBox.Lines = new string[0];
             this.VocabularyMetroTextBox.Location = new System.Drawing.Point(140, 100);
+            this.VocabularyMetroTextBox.MaxLength = 32767;
             this.VocabularyMetroTextBox.Name = "VocabularyMetroTextBox";
+            this.VocabularyMetroTextBox.PasswordChar = '\0';
+            this.VocabularyMetroTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.VocabularyMetroTextBox.SelectedText = "";
+            this.VocabularyMetroTextBox.SelectionLength = 0;
+            this.VocabularyMetroTextBox.SelectionStart = 0;
+            this.VocabularyMetroTextBox.ShortcutsEnabled = true;
             this.VocabularyMetroTextBox.Size = new System.Drawing.Size(132, 23);
             this.VocabularyMetroTextBox.TabIndex = 1;
+            this.VocabularyMetroTextBox.UseSelectable = true;
+            this.VocabularyMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.VocabularyMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // AddVocabularyMetroButton
             // 
@@ -58,6 +81,7 @@
             this.AddVocabularyMetroButton.Size = new System.Drawing.Size(75, 23);
             this.AddVocabularyMetroButton.TabIndex = 2;
             this.AddVocabularyMetroButton.Text = "Add";
+            this.AddVocabularyMetroButton.UseSelectable = true;
             // 
             // label2
             // 
@@ -70,11 +94,34 @@
             // 
             // MeaningMetroTextBox
             // 
+            // 
+            // 
+            // 
+            this.MeaningMetroTextBox.CustomButton.Image = null;
+            this.MeaningMetroTextBox.CustomButton.Location = new System.Drawing.Point(183, 1);
+            this.MeaningMetroTextBox.CustomButton.Name = "";
+            this.MeaningMetroTextBox.CustomButton.Size = new System.Drawing.Size(105, 105);
+            this.MeaningMetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.MeaningMetroTextBox.CustomButton.TabIndex = 1;
+            this.MeaningMetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.MeaningMetroTextBox.CustomButton.UseSelectable = true;
+            this.MeaningMetroTextBox.CustomButton.Visible = false;
+            this.MeaningMetroTextBox.Lines = new string[0];
             this.MeaningMetroTextBox.Location = new System.Drawing.Point(140, 136);
+            this.MeaningMetroTextBox.MaxLength = 32767;
             this.MeaningMetroTextBox.Multiline = true;
             this.MeaningMetroTextBox.Name = "MeaningMetroTextBox";
+            this.MeaningMetroTextBox.PasswordChar = '\0';
+            this.MeaningMetroTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.MeaningMetroTextBox.SelectedText = "";
+            this.MeaningMetroTextBox.SelectionLength = 0;
+            this.MeaningMetroTextBox.SelectionStart = 0;
+            this.MeaningMetroTextBox.ShortcutsEnabled = true;
             this.MeaningMetroTextBox.Size = new System.Drawing.Size(289, 107);
             this.MeaningMetroTextBox.TabIndex = 4;
+            this.MeaningMetroTextBox.UseSelectable = true;
+            this.MeaningMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.MeaningMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // AddVocabularyForm
             // 
@@ -86,6 +133,7 @@
             this.Controls.Add(this.AddVocabularyMetroButton);
             this.Controls.Add(this.VocabularyMetroTextBox);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "AddVocabularyForm";
             this.Resizable = false;
             this.Text = "Add Vocabulary";
