@@ -73,5 +73,9 @@ namespace Octopus
             }
         }
 
+        private void SearchMetroTextBox_ButtonClick(object sender, EventArgs e)
+        {
+            MetroFramework.MetroMessageBox.Show(this, "thanks for click");
+        }
     }
 }

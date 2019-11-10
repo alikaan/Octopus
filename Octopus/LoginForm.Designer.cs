@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.UsernameMetroTextBox = new MetroFramework.Controls.MetroTextBox();
             this.UsernameMetroLabel = new MetroFramework.Controls.MetroLabel();
             this.PasswordMetroLabel = new MetroFramework.Controls.MetroLabel();
@@ -52,6 +53,8 @@
             this.UsernameMetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.UsernameMetroTextBox.CustomButton.UseSelectable = true;
             this.UsernameMetroTextBox.CustomButton.Visible = false;
+            this.UsernameMetroTextBox.DisplayIcon = true;
+            this.UsernameMetroTextBox.Icon = ((System.Drawing.Image)(resources.GetObject("UsernameMetroTextBox.Icon")));
             this.UsernameMetroTextBox.Lines = new string[0];
             this.UsernameMetroTextBox.Location = new System.Drawing.Point(134, 81);
             this.UsernameMetroTextBox.MaxLength = 32767;
@@ -62,6 +65,7 @@
             this.UsernameMetroTextBox.SelectionLength = 0;
             this.UsernameMetroTextBox.SelectionStart = 0;
             this.UsernameMetroTextBox.ShortcutsEnabled = true;
+            this.UsernameMetroTextBox.ShowClearButton = true;
             this.UsernameMetroTextBox.Size = new System.Drawing.Size(121, 23);
             this.UsernameMetroTextBox.TabIndex = 0;
             this.UsernameMetroTextBox.UseSelectable = true;
@@ -100,6 +104,8 @@
             this.PasswordMetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.PasswordMetroTextBox.CustomButton.UseSelectable = true;
             this.PasswordMetroTextBox.CustomButton.Visible = false;
+            this.PasswordMetroTextBox.DisplayIcon = true;
+            this.PasswordMetroTextBox.Icon = ((System.Drawing.Image)(resources.GetObject("PasswordMetroTextBox.Icon")));
             this.PasswordMetroTextBox.Lines = new string[0];
             this.PasswordMetroTextBox.Location = new System.Drawing.Point(134, 114);
             this.PasswordMetroTextBox.MaxLength = 32767;
@@ -110,6 +116,7 @@
             this.PasswordMetroTextBox.SelectionLength = 0;
             this.PasswordMetroTextBox.SelectionStart = 0;
             this.PasswordMetroTextBox.ShortcutsEnabled = true;
+            this.PasswordMetroTextBox.ShowClearButton = true;
             this.PasswordMetroTextBox.Size = new System.Drawing.Size(121, 23);
             this.PasswordMetroTextBox.TabIndex = 3;
             this.PasswordMetroTextBox.UseSelectable = true;
@@ -147,15 +154,13 @@
             // CreateAccountMetroLabel
             // 
             this.CreateAccountMetroLabel.AutoSize = true;
-            this.CreateAccountMetroLabel.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.CreateAccountMetroLabel.ForeColor = System.Drawing.Color.Navy;
             this.CreateAccountMetroLabel.Location = new System.Drawing.Point(246, 172);
             this.CreateAccountMetroLabel.Name = "CreateAccountMetroLabel";
             this.CreateAccountMetroLabel.Size = new System.Drawing.Size(115, 19);
             this.CreateAccountMetroLabel.TabIndex = 7;
             this.CreateAccountMetroLabel.Text = "Create an account";
-            this.CreateAccountMetroLabel.Click += new System.EventHandler(this.CreateAccountMetroLabel_Click);
-            this.CreateAccountMetroLabel.MouseLeave += new System.EventHandler(this.CreateAccountMetroLabel_MouseLeave);
-            this.CreateAccountMetroLabel.MouseHover += new System.EventHandler(this.CreateAccountMetroLabel_MouseHover);
+            this.CreateAccountMetroLabel.Click += new System.EventHandler(this.CreateAccountMetroLabel_Click);            
             // 
             // LoginForm
             // 
