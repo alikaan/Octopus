@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Octopus", "Octopus\Octopus.csproj", "{4828F6A8-6E91-4F46-99C5-FA08E4E935B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonDynomoDB", "AmazonDynomoDB\AmazonDynomoDB.csproj", "{A1DED075-2531-45D4-AF34-D4ABD5B2FC43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4828F6A8-6E91-4F46-99C5-FA08E4E935B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4828F6A8-6E91-4F46-99C5-FA08E4E935B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4828F6A8-6E91-4F46-99C5-FA08E4E935B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1DED075-2531-45D4-AF34-D4ABD5B2FC43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1DED075-2531-45D4-AF34-D4ABD5B2FC43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1DED075-2531-45D4-AF34-D4ABD5B2FC43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1DED075-2531-45D4-AF34-D4ABD5B2FC43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
