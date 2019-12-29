@@ -15,11 +15,18 @@ namespace Octopus
         public LoginForm()
         {
             InitializeComponent();
-        }
+        }        
 
         private void CreateAccountMetroLabel_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.google.com");
+        {            
+            this.Hide();
+            System.Threading.Thread.Sleep(500);
+            using (RegisterForm form = new RegisterForm())
+            {
+                form.ShowDialog();
+            }
+            this.Show();
+            this.Focus();
         }
 
     }

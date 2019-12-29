@@ -41,7 +41,7 @@
             this.label1.Location = new System.Drawing.Point(52, 100);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 3;
             this.label1.Text = "Vocabulary :";
             // 
             // VocabularyMetroTextBox
@@ -69,7 +69,7 @@
             this.VocabularyMetroTextBox.SelectionStart = 0;
             this.VocabularyMetroTextBox.ShortcutsEnabled = true;
             this.VocabularyMetroTextBox.Size = new System.Drawing.Size(132, 23);
-            this.VocabularyMetroTextBox.TabIndex = 1;
+            this.VocabularyMetroTextBox.TabIndex = 0;
             this.VocabularyMetroTextBox.UseSelectable = true;
             this.VocabularyMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.VocabularyMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -82,6 +82,7 @@
             this.AddVocabularyMetroButton.TabIndex = 2;
             this.AddVocabularyMetroButton.Text = "Add";
             this.AddVocabularyMetroButton.UseSelectable = true;
+            this.AddVocabularyMetroButton.Click += new System.EventHandler(this.AddVocabularyMetroButton_Click);
             // 
             // label2
             // 
@@ -89,7 +90,7 @@
             this.label2.Location = new System.Drawing.Point(52, 136);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 4;
             this.label2.Text = "Meaning :";
             // 
             // MeaningMetroTextBox
@@ -118,7 +119,7 @@
             this.MeaningMetroTextBox.SelectionStart = 0;
             this.MeaningMetroTextBox.ShortcutsEnabled = true;
             this.MeaningMetroTextBox.Size = new System.Drawing.Size(289, 107);
-            this.MeaningMetroTextBox.TabIndex = 4;
+            this.MeaningMetroTextBox.TabIndex = 1;
             this.MeaningMetroTextBox.UseSelectable = true;
             this.MeaningMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.MeaningMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);

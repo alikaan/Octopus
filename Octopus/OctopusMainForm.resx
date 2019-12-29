@@ -117,8 +117,268 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="UserLoginMetroTile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="resource.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="UserLoginMetroTile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 88</value>
+  </data>
+  <data name="UserLoginMetroTile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 66</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="UserLoginMetroTile.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="UserLoginMetroTile.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="&gt;&gt;UserLoginMetroTile.Name" xml:space="preserve">
+    <value>UserLoginMetroTile</value>
+  </data>
+  <data name="&gt;&gt;UserLoginMetroTile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;UserLoginMetroTile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UserLoginMetroTile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SettingsMetroTile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="SettingsMetroTile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 179</value>
+  </data>
+  <data name="SettingsMetroTile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 66</value>
+  </data>
+  <data name="SettingsMetroTile.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="SettingsMetroTile.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;SettingsMetroTile.Name" xml:space="preserve">
+    <value>SettingsMetroTile</value>
+  </data>
+  <data name="&gt;&gt;SettingsMetroTile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;SettingsMetroTile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SettingsMetroTile.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="AddVocabularyMetroTile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 511</value>
+  </data>
+  <data name="AddVocabularyMetroTile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 66</value>
+  </data>
+  <data name="AddVocabularyMetroTile.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="AddVocabularyMetroTile.Text" xml:space="preserve">
+    <value>Add Vocabulary</value>
+  </data>
+  <data name="&gt;&gt;AddVocabularyMetroTile.Name" xml:space="preserve">
+    <value>AddVocabularyMetroTile</value>
+  </data>
+  <data name="&gt;&gt;AddVocabularyMetroTile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;AddVocabularyMetroTile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AddVocabularyMetroTile.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="VocabularyColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="VocabularyColumn.HeaderText" xml:space="preserve">
+    <value>Vocabulary</value>
+  </data>
+  <metadata name="VocabularyMeaningColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="VocabularyMeaningColumn.HeaderText" xml:space="preserve">
+    <value>Meaning</value>
+  </data>
+  <data name="VocabularyMeaningColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="VocabularyDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 117</value>
+  </data>
+  <data name="VocabularyDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 383</value>
+  </data>
+  <data name="VocabularyDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;VocabularyDataGridView.Name" xml:space="preserve">
+    <value>VocabularyDataGridView</value>
+  </data>
+  <data name="&gt;&gt;VocabularyDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;VocabularyDataGridView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;VocabularyDataGridView.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ExitMetroTile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="ExitMetroTile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 361</value>
+  </data>
+  <data name="ExitMetroTile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 66</value>
+  </data>
+  <data name="ExitMetroTile.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ExitMetroTile.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="&gt;&gt;ExitMetroTile.Name" xml:space="preserve">
+    <value>ExitMetroTile</value>
+  </data>
+  <data name="&gt;&gt;ExitMetroTile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;ExitMetroTile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ExitMetroTile.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="QuizMetroTile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="QuizMetroTile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 270</value>
+  </data>
+  <data name="QuizMetroTile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 66</value>
+  </data>
+  <data name="QuizMetroTile.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="QuizMetroTile.Text" xml:space="preserve">
+    <value>Quiz</value>
+  </data>
+  <data name="&gt;&gt;QuizMetroTile.Name" xml:space="preserve">
+    <value>QuizMetroTile</value>
+  </data>
+  <data name="&gt;&gt;QuizMetroTile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;QuizMetroTile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;QuizMetroTile.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="VocabularyListMetroLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="VocabularyListMetroLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 60</value>
+  </data>
+  <data name="VocabularyListMetroLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 25</value>
+  </data>
+  <data name="VocabularyListMetroLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="VocabularyListMetroLabel.Text" xml:space="preserve">
+    <value>Vocabulary List</value>
+  </data>
+  <data name="&gt;&gt;VocabularyListMetroLabel.Name" xml:space="preserve">
+    <value>VocabularyListMetroLabel</value>
+  </data>
+  <data name="&gt;&gt;VocabularyListMetroLabel.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;VocabularyListMetroLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;VocabularyListMetroLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 2</value>
+  </data>
+  <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 407</value>
+  </data>
+  <data name="resource.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="VocabularyMetroTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 88</value>
+  </data>
+  <data name="VocabularyMetroTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 412</value>
+  </data>
+  <data name="VocabularyMetroTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;VocabularyMetroTextBox.Name" xml:space="preserve">
+    <value>VocabularyMetroTextBox</value>
+  </data>
+  <data name="&gt;&gt;VocabularyMetroTextBox.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;VocabularyMetroTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;VocabularyMetroTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CopyrightMetroLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CopyrightMetroLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 561</value>
+  </data>
+  <data name="CopyrightMetroLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 19</value>
+  </data>
+  <data name="CopyrightMetroLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="CopyrightMetroLabel.Text" xml:space="preserve">
+    <value>Copyright Octopus 2019. All Rights Reserved.</value>
+  </data>
+  <data name="&gt;&gt;CopyrightMetroLabel.Name" xml:space="preserve">
+    <value>CopyrightMetroLabel</value>
+  </data>
+  <data name="&gt;&gt;CopyrightMetroLabel.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;CopyrightMetroLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CopyrightMetroLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="resource.Image1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAT1JREFUOE+t
         kr1KA1EQhddGIopE8R0sNYWdAQM+gbiwv7CyIljkTSJIUHwBBRv/UBKstBUsBO0tAkkRIY1YRCV+Nx7U
@@ -128,6 +388,15 @@
         ilkssU3sEM2PdfXTS/WBeQHjDjyH+9QrcRxPkl9AM+TG/LGy/x5hGI4y7HKgIexpgo+vzRDyDcl/A7sy
         16kSRyQNAst6A2T9jLXp3jOZAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="resource.Location1" type="System.Drawing.Point, System.Drawing">
+    <value>125, 1</value>
+  </data>
+  <data name="resource.Size1" type="System.Drawing.Size, System.Drawing">
+    <value>21, 21</value>
+  </data>
+  <data name="resource.TabIndex1" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="SearchMetroTextBox.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -140,7 +409,156 @@
         16kSRyQNAst6A2T9jLXp3jOZAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="SearchMetroTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 88</value>
+  </data>
+  <data name="SearchMetroTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 23</value>
+  </data>
+  <data name="SearchMetroTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;SearchMetroTextBox.Name" xml:space="preserve">
+    <value>SearchMetroTextBox</value>
+  </data>
+  <data name="&gt;&gt;SearchMetroTextBox.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;SearchMetroTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SearchMetroTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>48</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 600</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAEBAAAAEAIABoBAAAJgAAACAgAAABACAAqBAAAI4EAAAoAAAAEAAAACAAAAABACAAAAAAADAE
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAANOZXyPZq3qO1qRxotKeZ37EiU4NAAAAAAAAAAAAAAAAAAAAAMSJ
+        Tg3Tn2h/1qRxotmreo7TmV8jAAAAAMqOTSvOlVrM269/s+rKquP66dX/4LiMz9GibiwAAAAAAAAAANSd
+        Zy/ft4zQ+unV/+rKp+Pbr4CyzpVazMiMTyrHh0ggAAAAAMqOVT/YoGme4LmN7/7w3//guI3U0ZtbHMyZ
+        VR7guI3U/vDf/+C3jO7WoWidzpBWPgAAAADHh0ggAAAAANefZpjvx5nw/ty2/+i+j//97dz//u/e/+XC
+        nODmw5zg/u/e//zt2//ovY///ty2/+/HmfDWoGSWAAAAAM+UXEXwyJv08MaZ7uCuedPhsX7o9uDJ//7w
+        3//+8N///vDf//7w3//14Mj/37B96OCuedPvxpnv78aZ88+XWEDYommW9s6k99KZXGcAAAAAzJBUavPd
+        wv/+8N///vDf//7w3//+8N//89zC/86TVmgAAAAA0ptda/XPpfjXommU2qVvn+e5h+XEiU4NAAAAANGe
+        Y2T559L//vDf//7w3//+8N///vDf//nm0f/Sm2dhAAAAAMiASQ7ou4rl2qVuntOeYWnsw5P205pfhs6N
+        US/Yq3id/vDf//Lav//66NT/+efT//Lav//+8N7/2al3msqKUDDSml6I7sSU9tWeYmb//wAB2KNritii
+        acnTl1xA4bqQy/7w3//Mk1b/4ryT/+O8kv/Nklf//vDf/+G6kMrRl11C2KJpydijaYr//wABAAAAAAAA
+        AAAAAAAAzY9XKe/WuPL+8N//1qRv/+rLqf/qyqn/1qVx//7w3//v07TyyY1RJgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAANGdYmP559P//vDf//7w3//+8N///vDf//7w3//+8N//+ebR/9KbZ2EAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADVn2p4/Oza//7w3//+8N///vDf//7w3//+8N///vDf//zs2f/UoGp2AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAzphYNPDWuvT+8N///vDf//7w3//+8N///vDf//7w3//v1bjzy5JTMQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADZqXfB/e7c//7w3//+8N///vDf//7w3//97tz/2Kd3vwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzI9SGdqresn348z9/vDf//7w3//35Mz8261+xMqV
+        VRgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/gIAC1KFpZNemc57YpnWd051nY/+A
+        gAIAAAAAAAAAAAAAAAAAAAAAAAAAAM/zAACDwQAA4YcAAIABAACAAQAAOBwAADgcAACQCQAAkAkAAPAP
+        AADwDwAA8A8AAPAPAADwDwAA+B8AAP5/AAAoAAAAIAAAAEAAAAABACAAAAAAAIAQAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+AgALFjEofy4dEIsOHSxEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAw4dLEcuHRCLFjEof/4CAAgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAMiASQ7Lj1GYy5FV69OdZuzXpnLu1KFt6c2UWOfPlVu0yItILgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADGjUkxzpVbts2UWOfUoW3p16Zy7tOd
+        ZuzMkVXqypFSlsSJTg0AAAAAAAAAAAAAAADMjE0Uyo5Q48qPUfzes4X06sup//vq1//+8N///vDf//Pb
+        wP/Tn2nsy5FTjv//AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wABy5BTk9OfaO3z3MH//vDf//7w
+        3//76tb/6suo/96yhfTKj1H8yo5P4cmGQxMAAAAAAAAAAMmLSqnLkFLExopGTMWIRj7Mj1J5zZNV4OC3
+        jPH87dv//vDf//7v3v/es4fyzJNWpgAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAc6TVqrdtIfz/u/e//7w
+        3//87dv/37aK8c2SVt/MkVV4yYpHPcaKRkzLkFPFx4pKpQAAAADIgEkOyIdHcwAAAAAAAAAAAAAAAAAA
+        AAD/gIAEyY1PiNOfZ+/+797//vDf//7w3//csYTyzJFUiwAAAAAAAAAAAAAAAAAAAADMklWN3bKF8v7w
+        3//+8N///u/e/9Kfae/JjE+F/6pVAwAAAAAAAAAAAAAAAAAAAADIiEZ0v4BADMiASQ7//wABAAAAAAAA
+        AADIiUk4zY9Qu8yQUurRl1vr0Zdc9+XCm/7+8N///vDf//7v3v/WpnPvy5BRcQAAAAAAAAAAy5BRddio
+        dO/+797//vDf//7w3//lwJr+0Zhc99CWWuvMkFLqzJFRuceGRjcAAAAAAAAAAP//AAHIgEkOAAAAAAAA
+        AAD/gIACzZBRmNSdYuzzzKD//ty2//7ctv/82bH/0pph//7w3v/+8N///vDf//3t3P/Xp3PtzJJU1MyQ
+        VNXXp3bu/e3c//7w3//+8N///vDe/9KaYf/82LL//ty2//7ctv/zy5//1Jxh7MyRUpb//wABAAAAAAAA
+        AAAAAAAAAAAAAMyPUJ/hrnnz/ty1//7ctv/+3Lb//ty2//7ctv/ZpXD/9uHK//7w3//+8N///vDf//7w
+        3//55tH/+ebR//7w3//+8N///vDf//7w3//24Mn/2qZw//7ctv/+3Lb//ty2//7ctv/+3LX/36548syO
+        T5oAAAAAAAAAAAAAAADHhkY31Jtg7f7ctf/+3Lb//ty2//jTqv/30af/+9iw/+O0gf/s0K///vDf//7w
+        3//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf/+zPrv/jtYL/+9iw//fRp//406r//ty2//7c
+        tv/+3LX/05pg7cmJRTQAAAAAAAAAAMyRUrryyp7//ty2//HJnv7PlFfqzI5Q1c2RULvMkVLZ2KFo9+jI
+        pP/+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w3//+8N//6Mik/9agZ/fMkVHYzZFQu8yQ
+        UNXPlFfq8sqe/v7ctv/xyZ3/zZFStwAAAACqqlUDzZJT6f7ctv/41Kr/zJBR48SJSCcAAAAAAAAAAP//
+        AAHKjEze6Mai//7w3//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w3//oxqL/yoxM3f//
+        AAEAAAAAAAAAAMaGRijNj1Lk+dOr//7ctf/OkVTo/4CAAsqKShjRmF3p/ty2/92rdvDJikpMAAAAAAAA
+        AAAAAAAAAAAAAMqOTHzpyqb//vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf/+nJ
+        pv/Hi0t7AAAAAAAAAAAAAAAAAAAAAMiLR0/erHXw/ty2/9GYXOnFi0YWxYVGLNiiaen+3Lb/0Zlc6MiA
+        SQ4AAAAAAAAAAAAAAAAAAAAAzJJUjO3Rsf/+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w
+        3//+8N//7NCv/8yQVIgAAAAAAAAAAAAAAAAAAAAAv49AENKYXOj+3Lb/2KFo6ciGSSrKikoY05pg6f7c
+        tv/SmV3qzIhEDwAAAAAAAAAAAAAAAAAAAADOlFi/9d/H//7w3//+8N///vDf//7w3//+8N///vDf//7w
+        3//+8N///vDf//7w3//138b/zpVYvAAAAAAAAAAAAAAAAAAAAADDh0sR0Zhc6/7ctv/Sm1/pyIVDFwAA
+        AADNkVLm/Nmy/9+sd/HJi0xRAAAAAAAAAAAAAAAAqqpVA8ySVuj+797//vDf//7w3//+8N///vDf//7w
+        3//+8N///vDf//7w3//+8N///vDf//7v3v/Mklbo/4CAAgAAAAAAAAAAAAAAAMiMT1TerHfy/Niy/82R
+        UuUAAAAAAAAAAMyOUXjjtIL3+NKp/86SVOrMjlGRyYtNosqKShjHhkU72qx77P7w3//+8N//8trA/9Wi
+        bf/rzaz//vDf//7w3//rzKv/1aJt//PbwP/+8N///vDf/9mreezFhkg5xIlFGsmLTqHMjlGRzpJU6vfS
+        qf/js4D2zJFRdAAAAAAAAAAAzJkzBc2OUsXcqXPz7sOW/9agZ/3Lj1DZ//8AAc2RV57u0rT//vDf//7w
+        3//Tn2j/x4hH/8uOUf/87Nr//O3a/8qOUP/HiEf/1KBq//7w3//+8N//7tKz/8yRVZz/gIACzI9P29mj
+        afzvxZf/26hx88yPUMLMmTMFAAAAAAAAAAAAAAAA/4CAAseKSVfMj1GhzI1QhsyIRA8AAAAAzJJV4/zs
+        2v/+8N///vDf/8mMTP/HiEf/x4hH//Xfxv/13sb/x4hH/8eIR//JjE3//vDf//7w3//87Nr/zJNW4gAA
+        AAC/j0AQzI5Ph8yPUaHKi0dW//8AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMaG
+        RijXpHDp/vDf//7w3//+8N//z5dc/8eIR//Iikr/+unV//ro0//Iikn/x4hH/9CYXv/+8N///vDf//7w
+        3//Vo2/pxodHJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAyo9QeevKp/z+8N///vDf//7w3//rza3/zJJV/+K8k//+8N///vDf/+O8kv/MklX/7M6t//7w
+        3//+8N///vDf/+rJpfzLjlF1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADNlFm49d/F//7w3//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w
+        3//+8N///vDf//7w3//+8N//9N7E/86VWLYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAMyTV9T76tf//vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w
+        3//+8N///vDf//7w3//+8N///vDf//7w3//66dX/zZNW0gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzJJV3P3t3P/+8N///vDf//7w3//+8N///vDf//7w
+        3//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//zt2//NklbbAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADOk1nJ+ObP//7w3//+8N///vDf//7w
+        3//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w3//+8N//+OTO/86UWcYAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMyRVZDu0bH+/vDf//7w
+        3//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w3//tz6/+zJJWjAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxodJMdeo
+        dO3+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf/9el
+        c+zIi0guAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAzZRazfXexv/+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w
+        3//03sX/zpRYygAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADFhUYsz5hd6/vq1//+8N///vDf//7w3//+8N///vDf//7w3//+8N///vDf//7w
+        3//+8N//++rW/8+YXevIhkkqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMjk9a0Zpi7vnl0P/+8N///vDf//7w3//+8N///vDf//7w
+        3//+8N///vDf//jlz//RmmDuypBSVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHi0xAzZNW5eTBmvj66tX//vDf//7w
+        3//+8N///vDf//rp1f/lwZr3zZNW5MqMTj4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMgE0KzJJUg8yS
+        VeDQmmHq1qNv7Najb+zPmF/rzJFW38yQU4HGjlUJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAMiASQ7Ji0Yhx4dIIMiASQ4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/////gP/wHwA/wA5wH4Dn+A8B/+APAH+AAAAfAAAADwAAAA4AA
+        AAGHgAHhj8AD8Y+AAfGPgAHxj4AB8cGAAYPBAACD8wAAz/8AAP//AAD//gAAf/4AAH/+AAB//gAAf/4A
+        AH//AAD//wAA//+AAf//wAP//+AH///wD///////
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Octopus Dictionary</value>
+  </data>
+  <data name="&gt;&gt;VocabularyColumn.Name" xml:space="preserve">
+    <value>VocabularyColumn</value>
+  </data>
+  <data name="&gt;&gt;VocabularyColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;VocabularyMeaningColumn.Name" xml:space="preserve">
+    <value>VocabularyMeaningColumn</value>
+  </data>
+  <data name="&gt;&gt;VocabularyMeaningColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>OctopusMainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
 </root>

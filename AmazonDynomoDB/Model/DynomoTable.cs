@@ -1,20 +1,49 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Amazon.Runtime;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
 
-namespace AmazonDynomoDB
+namespace AmazonDynomoDB.Model
 {
     public class DynomoTable
     {
-        private AmazonDynamoDBClient DynomoClient = new AmazonDynamoDBClient();
+
+        private AmazonDynamoDBClient DynomoClient;
+        public string TableName { get; set; }
+        private string AwsKeyId { get; set; }
+        private string AwsKeyAccess { get; set; }
+        public string AwsRegion { get; set; }
+
+        public DynomoTable(string awsKeyId, string awsKeyAccess, string awsRegion)
+        {
+            this.AwsKeyId = awsKeyId;
+            this.AwsKeyAccess = awsKeyAccess;
+            this.AwsRegion = AwsRegion;
+            var awsCredentials = new BasicAWSCredentials(this.AwsKeyId, this.AwsKeyAccess);
+            DynomoClient = new AmazonDynamoDBClient(awsCredentials);
+        }
+
+        public DynomoTable()
+        {
+
+        }
+
+        public void SetCredentials(string awsKeyId, string awsKeyAccess)
+        {
+            this.AwsKeyId = awsKeyId;
+            this.AwsKeyAccess = AwsKeyAccess;
+            var awsCredentials = new BasicAWSCredentials(this.AwsKeyId, this.AwsKeyAccess);
+            DynomoClient = new AmazonDynamoDBClient(awsCredentials);
+        }
 
         public void CreateTable(string tableName)
         {
+            
+            TableName = tableName;
             var request = new CreateTableRequest
             {
-                TableName = tableName,
                 AttributeDefinitions = new List<AttributeDefinition>()
                 {
                     new AttributeDefinition

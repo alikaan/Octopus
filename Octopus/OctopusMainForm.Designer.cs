@@ -33,10 +33,12 @@
             this.SettingsMetroTile = new MetroFramework.Controls.MetroTile();
             this.AddVocabularyMetroTile = new MetroFramework.Controls.MetroTile();
             this.VocabularyDataGridView = new System.Windows.Forms.DataGridView();
+            this.VocabularyColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VocabularyMeaningColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExitMetroTile = new MetroFramework.Controls.MetroTile();
             this.QuizMetroTile = new MetroFramework.Controls.MetroTile();
             this.VocabularyListMetroLabel = new MetroFramework.Controls.MetroLabel();
-            this.VocabularyMeaningMetroTextBox = new MetroFramework.Controls.MetroTextBox();
+            this.VocabularyMetroTextBox = new MetroFramework.Controls.MetroTextBox();
             this.CopyrightMetroLabel = new MetroFramework.Controls.MetroLabel();
             this.SearchMetroTextBox = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.VocabularyDataGridView)).BeginInit();
@@ -45,12 +47,10 @@
             // UserLoginMetroTile
             // 
             this.UserLoginMetroTile.ActiveControl = null;
+            resources.ApplyResources(this.UserLoginMetroTile, "UserLoginMetroTile");
+            this.UserLoginMetroTile.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.UserLoginMetroTile.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.UserLoginMetroTile.Location = new System.Drawing.Point(698, 137);
             this.UserLoginMetroTile.Name = "UserLoginMetroTile";
-            this.UserLoginMetroTile.Size = new System.Drawing.Size(120, 66);
-            this.UserLoginMetroTile.TabIndex = 0;
-            this.UserLoginMetroTile.Text = "Login";
             this.UserLoginMetroTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.UserLoginMetroTile.UseSelectable = true;
             this.UserLoginMetroTile.Click += new System.EventHandler(this.UserLoginMetroTile_Click);
@@ -58,11 +58,9 @@
             // SettingsMetroTile
             // 
             this.SettingsMetroTile.ActiveControl = null;
-            this.SettingsMetroTile.Location = new System.Drawing.Point(698, 228);
+            resources.ApplyResources(this.SettingsMetroTile, "SettingsMetroTile");
+            this.SettingsMetroTile.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.SettingsMetroTile.Name = "SettingsMetroTile";
-            this.SettingsMetroTile.Size = new System.Drawing.Size(120, 66);
-            this.SettingsMetroTile.TabIndex = 1;
-            this.SettingsMetroTile.Text = "Settings";
             this.SettingsMetroTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.SettingsMetroTile.UseSelectable = true;
             this.SettingsMetroTile.Click += new System.EventHandler(this.SettingsMetroTile_Click);
@@ -70,31 +68,44 @@
             // AddVocabularyMetroTile
             // 
             this.AddVocabularyMetroTile.ActiveControl = null;
-            this.AddVocabularyMetroTile.Location = new System.Drawing.Point(23, 439);
+            this.AddVocabularyMetroTile.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.AddVocabularyMetroTile, "AddVocabularyMetroTile");
             this.AddVocabularyMetroTile.Name = "AddVocabularyMetroTile";
-            this.AddVocabularyMetroTile.Size = new System.Drawing.Size(147, 66);
-            this.AddVocabularyMetroTile.TabIndex = 2;
-            this.AddVocabularyMetroTile.Text = "Add Vocabulary";
             this.AddVocabularyMetroTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.AddVocabularyMetroTile.UseSelectable = true;
             this.AddVocabularyMetroTile.Click += new System.EventHandler(this.AddVocabularyMetroTile_Click);
             // 
             // VocabularyDataGridView
             // 
+            this.VocabularyDataGridView.AllowUserToAddRows = false;
+            this.VocabularyDataGridView.AllowUserToDeleteRows = false;
             this.VocabularyDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.VocabularyDataGridView.Location = new System.Drawing.Point(23, 166);
+            this.VocabularyDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.VocabularyColumn,
+            this.VocabularyMeaningColumn});
+            resources.ApplyResources(this.VocabularyDataGridView, "VocabularyDataGridView");
             this.VocabularyDataGridView.Name = "VocabularyDataGridView";
-            this.VocabularyDataGridView.Size = new System.Drawing.Size(147, 248);
-            this.VocabularyDataGridView.TabIndex = 3;
+            this.VocabularyDataGridView.ReadOnly = true;
+            this.VocabularyDataGridView.SelectionChanged += new System.EventHandler(this.VocabularyDataGridView_SelectionChanged);
+            // 
+            // VocabularyColumn
+            // 
+            resources.ApplyResources(this.VocabularyColumn, "VocabularyColumn");
+            this.VocabularyColumn.Name = "VocabularyColumn";
+            this.VocabularyColumn.ReadOnly = true;
+            // 
+            // VocabularyMeaningColumn
+            // 
+            resources.ApplyResources(this.VocabularyMeaningColumn, "VocabularyMeaningColumn");
+            this.VocabularyMeaningColumn.Name = "VocabularyMeaningColumn";
+            this.VocabularyMeaningColumn.ReadOnly = true;
             // 
             // ExitMetroTile
             // 
             this.ExitMetroTile.ActiveControl = null;
-            this.ExitMetroTile.Location = new System.Drawing.Point(698, 410);
+            resources.ApplyResources(this.ExitMetroTile, "ExitMetroTile");
+            this.ExitMetroTile.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ExitMetroTile.Name = "ExitMetroTile";
-            this.ExitMetroTile.Size = new System.Drawing.Size(120, 66);
-            this.ExitMetroTile.TabIndex = 4;
-            this.ExitMetroTile.Text = "Exit";
             this.ExitMetroTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.ExitMetroTile.UseSelectable = true;
             this.ExitMetroTile.Click += new System.EventHandler(this.ExitMetroTile_Click);
@@ -102,83 +113,71 @@
             // QuizMetroTile
             // 
             this.QuizMetroTile.ActiveControl = null;
-            this.QuizMetroTile.Location = new System.Drawing.Point(698, 319);
+            resources.ApplyResources(this.QuizMetroTile, "QuizMetroTile");
+            this.QuizMetroTile.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.QuizMetroTile.Name = "QuizMetroTile";
-            this.QuizMetroTile.Size = new System.Drawing.Size(120, 66);
-            this.QuizMetroTile.TabIndex = 5;
-            this.QuizMetroTile.Text = "Quiz";
             this.QuizMetroTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.QuizMetroTile.UseSelectable = true;
             this.QuizMetroTile.Click += new System.EventHandler(this.QuizMetroTile_Click);
             // 
             // VocabularyListMetroLabel
             // 
-            this.VocabularyListMetroLabel.AutoSize = true;
+            resources.ApplyResources(this.VocabularyListMetroLabel, "VocabularyListMetroLabel");
             this.VocabularyListMetroLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.VocabularyListMetroLabel.Location = new System.Drawing.Point(23, 94);
             this.VocabularyListMetroLabel.Name = "VocabularyListMetroLabel";
-            this.VocabularyListMetroLabel.Size = new System.Drawing.Size(125, 25);
-            this.VocabularyListMetroLabel.TabIndex = 6;
-            this.VocabularyListMetroLabel.Text = "Vocabulary List";
             // 
-            // VocabularyMeaningMetroTextBox
+            // VocabularyMetroTextBox
             // 
             // 
             // 
             // 
-            this.VocabularyMeaningMetroTextBox.CustomButton.Image = null;
-            this.VocabularyMeaningMetroTextBox.CustomButton.Location = new System.Drawing.Point(197, 1);
-            this.VocabularyMeaningMetroTextBox.CustomButton.Name = "";
-            this.VocabularyMeaningMetroTextBox.CustomButton.Size = new System.Drawing.Size(275, 275);
-            this.VocabularyMeaningMetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.VocabularyMeaningMetroTextBox.CustomButton.TabIndex = 1;
-            this.VocabularyMeaningMetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.VocabularyMeaningMetroTextBox.CustomButton.UseSelectable = true;
-            this.VocabularyMeaningMetroTextBox.CustomButton.Visible = false;
-            this.VocabularyMeaningMetroTextBox.Lines = new string[0];
-            this.VocabularyMeaningMetroTextBox.Location = new System.Drawing.Point(188, 137);
-            this.VocabularyMeaningMetroTextBox.MaxLength = 32767;
-            this.VocabularyMeaningMetroTextBox.Multiline = true;
-            this.VocabularyMeaningMetroTextBox.Name = "VocabularyMeaningMetroTextBox";
-            this.VocabularyMeaningMetroTextBox.PasswordChar = '\0';
-            this.VocabularyMeaningMetroTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.VocabularyMeaningMetroTextBox.SelectedText = "";
-            this.VocabularyMeaningMetroTextBox.SelectionLength = 0;
-            this.VocabularyMeaningMetroTextBox.SelectionStart = 0;
-            this.VocabularyMeaningMetroTextBox.ShortcutsEnabled = true;
-            this.VocabularyMeaningMetroTextBox.Size = new System.Drawing.Size(473, 277);
-            this.VocabularyMeaningMetroTextBox.TabIndex = 8;
-            this.VocabularyMeaningMetroTextBox.UseSelectable = true;
-            this.VocabularyMeaningMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.VocabularyMeaningMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.VocabularyMetroTextBox.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.VocabularyMetroTextBox.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
+            this.VocabularyMetroTextBox.CustomButton.Name = "";
+            this.VocabularyMetroTextBox.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
+            this.VocabularyMetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.VocabularyMetroTextBox.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
+            this.VocabularyMetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.VocabularyMetroTextBox.CustomButton.UseSelectable = true;
+            this.VocabularyMetroTextBox.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
+            this.VocabularyMetroTextBox.Lines = new string[0];
+            resources.ApplyResources(this.VocabularyMetroTextBox, "VocabularyMetroTextBox");
+            this.VocabularyMetroTextBox.MaxLength = 32767;
+            this.VocabularyMetroTextBox.Multiline = true;
+            this.VocabularyMetroTextBox.Name = "VocabularyMetroTextBox";
+            this.VocabularyMetroTextBox.PasswordChar = '\0';
+            this.VocabularyMetroTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.VocabularyMetroTextBox.SelectedText = "";
+            this.VocabularyMetroTextBox.SelectionLength = 0;
+            this.VocabularyMetroTextBox.SelectionStart = 0;
+            this.VocabularyMetroTextBox.ShortcutsEnabled = true;
+            this.VocabularyMetroTextBox.UseSelectable = true;
+            this.VocabularyMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.VocabularyMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // CopyrightMetroLabel
             // 
-            this.CopyrightMetroLabel.AutoSize = true;
+            resources.ApplyResources(this.CopyrightMetroLabel, "CopyrightMetroLabel");
             this.CopyrightMetroLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.CopyrightMetroLabel.Location = new System.Drawing.Point(270, 524);
             this.CopyrightMetroLabel.Name = "CopyrightMetroLabel";
-            this.CopyrightMetroLabel.Size = new System.Drawing.Size(272, 19);
-            this.CopyrightMetroLabel.TabIndex = 9;
-            this.CopyrightMetroLabel.Text = "Copyright Octopus 2019. All Rights Reserved.";
             // 
             // SearchMetroTextBox
             // 
             // 
             // 
             // 
-            this.SearchMetroTextBox.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.SearchMetroTextBox.CustomButton.Location = new System.Drawing.Point(125, 1);
+            this.SearchMetroTextBox.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.SearchMetroTextBox.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location1")));
             this.SearchMetroTextBox.CustomButton.Name = "";
-            this.SearchMetroTextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.SearchMetroTextBox.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size1")));
             this.SearchMetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.SearchMetroTextBox.CustomButton.TabIndex = 1;
+            this.SearchMetroTextBox.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex1")));
             this.SearchMetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.SearchMetroTextBox.CustomButton.UseSelectable = true;
             this.SearchMetroTextBox.DisplayIcon = true;
             this.SearchMetroTextBox.Icon = ((System.Drawing.Image)(resources.GetObject("SearchMetroTextBox.Icon")));
             this.SearchMetroTextBox.Lines = new string[0];
-            this.SearchMetroTextBox.Location = new System.Drawing.Point(23, 137);
+            resources.ApplyResources(this.SearchMetroTextBox, "SearchMetroTextBox");
             this.SearchMetroTextBox.MaxLength = 32767;
             this.SearchMetroTextBox.Name = "SearchMetroTextBox";
             this.SearchMetroTextBox.PasswordChar = '\0';
@@ -190,34 +189,36 @@
             this.SearchMetroTextBox.ShortcutsEnabled = true;
             this.SearchMetroTextBox.ShowButton = true;
             this.SearchMetroTextBox.ShowClearButton = true;
-            this.SearchMetroTextBox.Size = new System.Drawing.Size(147, 23);
-            this.SearchMetroTextBox.TabIndex = 10;
             this.SearchMetroTextBox.UseSelectable = true;
             this.SearchMetroTextBox.WaterMark = "Search";
             this.SearchMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.SearchMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.SearchMetroTextBox.ButtonClick += new MetroFramework.Controls.MetroTextBox.ButClick(this.SearchMetroTextBox_ButtonClick);
+            this.SearchMetroTextBox.Click += new System.EventHandler(this.SearchMetroTextBox_Click);
             // 
             // OctopusMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(851, 561);
+            this.BackImage = global::Octopus.Properties.Resources.octopus_40px;
+            this.BackImagePadding = new System.Windows.Forms.Padding(530, 15, 0, 0);
+            this.BackMaxSize = 40;
+            this.Controls.Add(this.UserLoginMetroTile);
+            this.Controls.Add(this.SettingsMetroTile);
+            this.Controls.Add(this.VocabularyMetroTextBox);
             this.Controls.Add(this.SearchMetroTextBox);
-            this.Controls.Add(this.CopyrightMetroLabel);
-            this.Controls.Add(this.VocabularyMeaningMetroTextBox);
-            this.Controls.Add(this.VocabularyListMetroLabel);
             this.Controls.Add(this.QuizMetroTile);
+            this.Controls.Add(this.CopyrightMetroLabel);
             this.Controls.Add(this.ExitMetroTile);
+            this.Controls.Add(this.VocabularyListMetroLabel);
             this.Controls.Add(this.VocabularyDataGridView);
             this.Controls.Add(this.AddVocabularyMetroTile);
-            this.Controls.Add(this.SettingsMetroTile);
-            this.Controls.Add(this.UserLoginMetroTile);
             this.MaximizeBox = false;
             this.Name = "OctopusMainForm";
             this.Resizable = false;
-            this.Text = "Octopus Dictionary";
+            this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Right;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OctopusMainForm_FormClosing);
+            this.Load += new System.EventHandler(this.OctopusMainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.VocabularyDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -233,9 +234,11 @@
         private MetroFramework.Controls.MetroTile ExitMetroTile;
         private MetroFramework.Controls.MetroTile QuizMetroTile;
         private MetroFramework.Controls.MetroLabel VocabularyListMetroLabel;
-        private MetroFramework.Controls.MetroTextBox VocabularyMeaningMetroTextBox;
+        private MetroFramework.Controls.MetroTextBox VocabularyMetroTextBox;
         private MetroFramework.Controls.MetroLabel CopyrightMetroLabel;
         private MetroFramework.Controls.MetroTextBox SearchMetroTextBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VocabularyColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VocabularyMeaningColumn;
     }
 }
 

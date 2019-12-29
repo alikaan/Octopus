@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Octopus
 {
-    public partial class AddVocabularyForm : MetroFramework.Forms.MetroForm
+    public partial class RegisterForm : MetroFramework.Forms.MetroForm
     {
-        public AddVocabularyForm()
+        public RegisterForm()
         {
             InitializeComponent();
         }
