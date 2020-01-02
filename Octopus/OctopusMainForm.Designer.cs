@@ -193,8 +193,7 @@
             this.SearchMetroTextBox.WaterMark = "Search";
             this.SearchMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.SearchMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.SearchMetroTextBox.ButtonClick += new MetroFramework.Controls.MetroTextBox.ButClick(this.SearchMetroTextBox_ButtonClick);
-            this.SearchMetroTextBox.Click += new System.EventHandler(this.SearchMetroTextBox_Click);
+            this.SearchMetroTextBox.ButtonClick += new MetroFramework.Controls.MetroTextBox.ButClick(this.SearchMetroTextBox_ButtonClick);            
             // 
             // OctopusMainForm
             // 

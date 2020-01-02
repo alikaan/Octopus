@@ -23,9 +23,8 @@ namespace Octopus
         }
 
         private void UserLoginMetroTile_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            System.Threading.Thread.Sleep(500);
+        {            
+            System.Threading.Thread.Sleep(100);
             using (LoginForm form = new LoginForm())
             {
                 form.ShowDialog();                

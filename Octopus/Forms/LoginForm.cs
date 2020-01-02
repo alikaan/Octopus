@@ -19,8 +19,7 @@ namespace Octopus
 
         private void CreateAccountMetroLabel_Click(object sender, EventArgs e)
         {            
-            this.Hide();
-            System.Threading.Thread.Sleep(500);
+            System.Threading.Thread.Sleep(100);
             using (RegisterForm form = new RegisterForm())
             {
                 form.ShowDialog();
