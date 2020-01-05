@@ -57,13 +57,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AmazonDynomoDB\DataAccessLayer.csproj">
-      <Project>{a1ded075-2531-45d4-af34-d4abd5b2fc43}</Project>
-      <Name>DataAccessLayer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
       <Project>{9c06875f-b66a-4ad7-96a3-af3a6d918753}</Project>
       <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{f95c6510-f8cc-4236-a283-e0c5a5489925}</Project>
+      <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -55,8 +55,7 @@ namespace Test
             dbUtiliy.InsertAccount(taylan);
 
             var account = dbUtiliy.FindAccountByID(1);
-            Console.WriteLine($"{account.Email},{account.Username},{account.Password}");
-            IEnumerable<Account> acoounts = dbUtiliy.
+            Console.WriteLine($"{account.Email},{account.Username},{account.Password}");            
             Console.ReadLine();
         }
     }
