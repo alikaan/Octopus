@@ -42,14 +42,14 @@ namespace Octopus
         }
 
         private void AddVocabularyMetroTile_Click(object sender, EventArgs e)
-        {
-            MetroFramework.MetroMessageBox.Show(this, "thanks for click");
+        {            
             using (AddVocabularyForm form = new AddVocabularyForm())
             {
                 form.ShowDialog();
             }
             if(VocabularyAdd)
             {
+                VocabularyAdd = false;
                 string[] row = new string[] { Vocabulary, VocabularyMeaning };
                 VocabularyDataGridView.Rows.Add(row);
                 // add new vocabulary here
@@ -103,5 +103,6 @@ namespace Octopus
             VocabularyMetroTextBox.AppendText("Vocabulary : " + VocabularyDataGridView.Rows[rowindex].Cells["VocabularyColumn"].Value.ToString() + Environment.NewLine);
             VocabularyMetroTextBox.AppendText("Meaning : " + VocabularyDataGridView.Rows[rowindex].Cells["VocabularyMeaningColumn"].Value.ToString() + Environment.NewLine);
         }
+
     }
 }

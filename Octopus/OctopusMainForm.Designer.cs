@@ -86,7 +86,7 @@
             resources.ApplyResources(this.VocabularyDataGridView, "VocabularyDataGridView");
             this.VocabularyDataGridView.Name = "VocabularyDataGridView";
             this.VocabularyDataGridView.ReadOnly = true;
-            this.VocabularyDataGridView.SelectionChanged += new System.EventHandler(this.VocabularyDataGridView_SelectionChanged);
+            this.VocabularyDataGridView.SelectionChanged += new System.EventHandler(this.VocabularyDataGridView_SelectionChanged);            
             // 
             // VocabularyColumn
             // 
@@ -193,7 +193,7 @@
             this.SearchMetroTextBox.WaterMark = "Search";
             this.SearchMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.SearchMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.SearchMetroTextBox.ButtonClick += new MetroFramework.Controls.MetroTextBox.ButClick(this.SearchMetroTextBox_ButtonClick);            
+            this.SearchMetroTextBox.ButtonClick += new MetroFramework.Controls.MetroTextBox.ButClick(this.SearchMetroTextBox_ButtonClick);
             // 
             // OctopusMainForm
             // 

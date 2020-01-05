@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AmazonDynomoDB.Model;
-
+using BusinessLayer.Model;
+using DataAccessLayer.Model;
 
 namespace TestConsoleApplication
 {
@@ -12,11 +12,33 @@ namespace TestConsoleApplication
     {
         static void Main(string[] args)
         {
-            string awsKeyId = "AKIAR52JXGF3ZTI6VQ67";
-            string awsKeySecret = "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";
-            DynomoTable dynomoTable = new DynomoTable(awsKeyId, awsKeySecret);
+            string awsKeyId = "AKIAR52JXGF333RW2HGL";
+            string awsKeySecret = "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";
+            string awsRegion = "us-east-1";           
+            DynomoDBUtility dbUtiliy = new DynomoDBUtility();
+            
 
-            dynomoTable.CreateTable("test");
+            var tableNames = dbUtiliy.GetTables();
+            foreach (var tableName in tableNames)
+            {
+                Console.WriteLine($"{tableName}");
+            }
+            
+            dbUtiliy.CreateTable("Vocabulary", "VocabularyID", Amazon.DynamoDBv2.ScalarAttributeType.N);
+
+            Vocabulary vocabulary = new Vocabulary
+            {
+                VocabularyID = 1001,
+                VocabularyInfo = new VocabularyInfo
+                {
+                    Word = "Hello",
+                    Meaning = "Merhaba",
+                    Link = "blabla",
+                }
+            };
+
+            dbUtiliy.InsertVocabulary(vocabulary);
+
             // The tcode provided will print ‘Hello World’ to the console.
             // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
             Console.WriteLine("Hello World!");

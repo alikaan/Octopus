@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.779
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Octopus", "Octopus\Octopus.csproj", "{4828F6A8-6E91-4F46-99C5-FA08E4E935B3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazonDynomoDB", "AmazonDynomoDB\AmazonDynomoDB.csproj", "{A1DED075-2531-45D4-AF34-D4ABD5B2FC43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "AmazonDynomoDB\DataAccessLayer.csproj", "{A1DED075-2531-45D4-AF34-D4ABD5B2FC43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApplication", "TestConsoleApplication\TestConsoleApplication.csproj", "{46E4CFF4-556B-4F22-B2CA-8F6401792783}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{9C06875F-B66A-4AD7-96A3-AF3A6D918753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeLayer", "TypeLayer\TypeLayer.csproj", "{92C2A351-D654-4B20-AEC8-85F6A2C8F123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{CAE4E15F-BE55-4325-A703-0E39188F3423}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,18 @@ Global
 		{A1DED075-2531-45D4-AF34-D4ABD5B2FC43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1DED075-2531-45D4-AF34-D4ABD5B2FC43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1DED075-2531-45D4-AF34-D4ABD5B2FC43}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46E4CFF4-556B-4F22-B2CA-8F6401792783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46E4CFF4-556B-4F22-B2CA-8F6401792783}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46E4CFF4-556B-4F22-B2CA-8F6401792783}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46E4CFF4-556B-4F22-B2CA-8F6401792783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C06875F-B66A-4AD7-96A3-AF3A6D918753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C06875F-B66A-4AD7-96A3-AF3A6D918753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C06875F-B66A-4AD7-96A3-AF3A6D918753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C06875F-B66A-4AD7-96A3-AF3A6D918753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92C2A351-D654-4B20-AEC8-85F6A2C8F123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C2A351-D654-4B20-AEC8-85F6A2C8F123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C2A351-D654-4B20-AEC8-85F6A2C8F123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C2A351-D654-4B20-AEC8-85F6A2C8F123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE4E15F-BE55-4325-A703-0E39188F3423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE4E15F-BE55-4325-A703-0E39188F3423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE4E15F-BE55-4325-A703-0E39188F3423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE4E15F-BE55-4325-A703-0E39188F3423}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
