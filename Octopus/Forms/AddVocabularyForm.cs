@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLayer.Model;
 
 namespace Octopus
 {
@@ -21,11 +22,18 @@ namespace Octopus
         {            
             if (MetroFramework.MetroMessageBox.Show(this, "\n", "Octopus Dictionary | Add Vocabulary", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
-                OctopusMainForm.Vocabulary = VocabularyMetroTextBox.Text;
-                OctopusMainForm.VocabularyMeaning = MeaningMetroTextBox.Text;
+                Vocabulary word = new Vocabulary
+                {
+                    Word = "helo",
+                    Meaning = "hello",
+                    Link = "bla",
+                    ID = 4                    
+                };
+                OctopusMainForm.word = word;                
                 OctopusMainForm.VocabularyAdd = true;
                 this.Close();
             }        
         }
+        
     }
 }

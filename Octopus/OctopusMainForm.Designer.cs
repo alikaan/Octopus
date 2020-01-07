@@ -33,14 +33,16 @@
             this.SettingsMetroTile = new MetroFramework.Controls.MetroTile();
             this.AddVocabularyMetroTile = new MetroFramework.Controls.MetroTile();
             this.VocabularyDataGridView = new System.Windows.Forms.DataGridView();
-            this.VocabularyColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VocabularyMeaningColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExitMetroTile = new MetroFramework.Controls.MetroTile();
             this.QuizMetroTile = new MetroFramework.Controls.MetroTile();
             this.VocabularyListMetroLabel = new MetroFramework.Controls.MetroLabel();
             this.VocabularyMetroTextBox = new MetroFramework.Controls.MetroTextBox();
             this.CopyrightMetroLabel = new MetroFramework.Controls.MetroLabel();
             this.SearchMetroTextBox = new MetroFramework.Controls.MetroTextBox();
+            this.IDColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WordColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MeaningColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LinkColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.VocabularyDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,24 +83,14 @@
             this.VocabularyDataGridView.AllowUserToDeleteRows = false;
             this.VocabularyDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.VocabularyDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.VocabularyColumn,
-            this.VocabularyMeaningColumn});
+            this.IDColumn,
+            this.WordColumn,
+            this.MeaningColumn,
+            this.LinkColumn});
             resources.ApplyResources(this.VocabularyDataGridView, "VocabularyDataGridView");
             this.VocabularyDataGridView.Name = "VocabularyDataGridView";
             this.VocabularyDataGridView.ReadOnly = true;
-            this.VocabularyDataGridView.SelectionChanged += new System.EventHandler(this.VocabularyDataGridView_SelectionChanged);            
-            // 
-            // VocabularyColumn
-            // 
-            resources.ApplyResources(this.VocabularyColumn, "VocabularyColumn");
-            this.VocabularyColumn.Name = "VocabularyColumn";
-            this.VocabularyColumn.ReadOnly = true;
-            // 
-            // VocabularyMeaningColumn
-            // 
-            resources.ApplyResources(this.VocabularyMeaningColumn, "VocabularyMeaningColumn");
-            this.VocabularyMeaningColumn.Name = "VocabularyMeaningColumn";
-            this.VocabularyMeaningColumn.ReadOnly = true;
+            this.VocabularyDataGridView.SelectionChanged += new System.EventHandler(this.VocabularyDataGridView_SelectionChanged);
             // 
             // ExitMetroTile
             // 
@@ -195,6 +187,30 @@
             this.SearchMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.SearchMetroTextBox.ButtonClick += new MetroFramework.Controls.MetroTextBox.ButClick(this.SearchMetroTextBox_ButtonClick);
             // 
+            // IDColumn
+            // 
+            resources.ApplyResources(this.IDColumn, "IDColumn");
+            this.IDColumn.Name = "IDColumn";
+            this.IDColumn.ReadOnly = true;
+            // 
+            // WordColumn
+            // 
+            resources.ApplyResources(this.WordColumn, "WordColumn");
+            this.WordColumn.Name = "WordColumn";
+            this.WordColumn.ReadOnly = true;
+            // 
+            // MeaningColumn
+            // 
+            resources.ApplyResources(this.MeaningColumn, "MeaningColumn");
+            this.MeaningColumn.Name = "MeaningColumn";
+            this.MeaningColumn.ReadOnly = true;
+            // 
+            // LinkColumn
+            // 
+            resources.ApplyResources(this.LinkColumn, "LinkColumn");
+            this.LinkColumn.Name = "LinkColumn";
+            this.LinkColumn.ReadOnly = true;
+            // 
             // OctopusMainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -236,8 +252,10 @@
         private MetroFramework.Controls.MetroTextBox VocabularyMetroTextBox;
         private MetroFramework.Controls.MetroLabel CopyrightMetroLabel;
         private MetroFramework.Controls.MetroTextBox SearchMetroTextBox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VocabularyColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VocabularyMeaningColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn WordColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MeaningColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LinkColumn;
     }
 }
 

@@ -124,7 +124,7 @@ namespace DataAccessLayer.Model
                 Console.WriteLine("=====");
             }
         }
-
+        
         public static void PrintItem(Dictionary<string, AttributeValue> attrs)
         {
             foreach (KeyValuePair<string, AttributeValue> kvp in attrs)
@@ -132,7 +132,7 @@ namespace DataAccessLayer.Model
                 Console.Write(kvp.Key + " = ");
                 PrintValue(kvp.Value);
             }
-        }
+        }        
 
         public static void PrintValue(AttributeValue value)
         {
@@ -196,5 +196,54 @@ namespace DataAccessLayer.Model
 
             Console.Write("\n");
         }
+        public static Vocabulary GetWord(Dictionary<string, AttributeValue> attrs)
+        {
+            Vocabulary word = new Vocabulary();
+            foreach (KeyValuePair<string, AttributeValue> kvp in attrs)
+            {
+                switch (kvp.Key)
+                {
+                    case "Word":
+                        {
+                            word.Word = kvp.Value.S;
+                        }
+                        break;
+                    case "Meaning":
+                        {
+                            word.Meaning = kvp.Value.S;
+                        }
+                        break;
+                    case "Link":
+                        {
+                            word.Link = kvp.Value.S;
+                        }
+                        break;
+                    case "ID":
+                        {
+                            word.ID = Convert.ToInt32(kvp.Value.N);
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+            return word;
+        }
+        public List<Vocabulary> GetVocabularies(string tableName)
+        {
+            List<Vocabulary> vocabularies = new List<Vocabulary>();
+            var request = new ScanRequest
+            {
+                TableName = tableName,
+            };
+            //var context = new DynamoDBContext(DynomoClient);
+            var response = DynomoClient.ScanAsync(request);
+            foreach (var item in response.Result.Items)
+            {
+                vocabularies.Add(GetWord(item));
+            }
+            return vocabularies;
+        }
+
     }
 }

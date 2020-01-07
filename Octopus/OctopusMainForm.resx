@@ -198,19 +198,37 @@
   <data name="&gt;&gt;AddVocabularyMetroTile.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <metadata name="VocabularyColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="IDColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="VocabularyColumn.HeaderText" xml:space="preserve">
-    <value>Vocabulary</value>
+  <data name="IDColumn.HeaderText" xml:space="preserve">
+    <value>ID</value>
   </data>
-  <metadata name="VocabularyMeaningColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="IDColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="WordColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="VocabularyMeaningColumn.HeaderText" xml:space="preserve">
+  <data name="WordColumn.HeaderText" xml:space="preserve">
+    <value>Word</value>
+  </data>
+  <metadata name="MeaningColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="MeaningColumn.HeaderText" xml:space="preserve">
     <value>Meaning</value>
   </data>
-  <data name="VocabularyMeaningColumn.Visible" type="System.Boolean, mscorlib">
+  <data name="MeaningColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="LinkColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="LinkColumn.HeaderText" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="LinkColumn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="VocabularyDataGridView.Location" type="System.Drawing.Point, System.Drawing">
@@ -543,16 +561,28 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Octopus Dictionary</value>
   </data>
-  <data name="&gt;&gt;VocabularyColumn.Name" xml:space="preserve">
-    <value>VocabularyColumn</value>
+  <data name="&gt;&gt;IDColumn.Name" xml:space="preserve">
+    <value>IDColumn</value>
   </data>
-  <data name="&gt;&gt;VocabularyColumn.Type" xml:space="preserve">
+  <data name="&gt;&gt;IDColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;VocabularyMeaningColumn.Name" xml:space="preserve">
-    <value>VocabularyMeaningColumn</value>
+  <data name="&gt;&gt;WordColumn.Name" xml:space="preserve">
+    <value>WordColumn</value>
   </data>
-  <data name="&gt;&gt;VocabularyMeaningColumn.Type" xml:space="preserve">
+  <data name="&gt;&gt;WordColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MeaningColumn.Name" xml:space="preserve">
+    <value>MeaningColumn</value>
+  </data>
+  <data name="&gt;&gt;MeaningColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LinkColumn.Name" xml:space="preserve">
+    <value>LinkColumn</value>
+  </data>
+  <data name="&gt;&gt;LinkColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

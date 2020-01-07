@@ -8,14 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
+using BusinessLayer.Model;
+using DataAccessLayer.Model;
 
 namespace Octopus
 {
     public partial class OctopusMainForm : MetroFramework.Forms.MetroForm
     {        
         public static bool VocabularyAdd = false;
-        public static string Vocabulary;
-        public static string VocabularyMeaning;
+        public static Vocabulary word = new Vocabulary();        
 
         public OctopusMainForm()
         {
@@ -50,7 +51,7 @@ namespace Octopus
             if(VocabularyAdd)
             {
                 VocabularyAdd = false;
-                string[] row = new string[] { Vocabulary, VocabularyMeaning };
+                string[] row = new string[] { word.ID.ToString(), word.Word, word.Meaning, word.Link };
                 VocabularyDataGridView.Rows.Add(row);
                 // add new vocabulary here
             }
@@ -93,15 +94,25 @@ namespace Octopus
 
         private void OctopusMainForm_Load(object sender, EventArgs e)
         {
-            
+            DynomoDBUtility dbUtiliy = new DynomoDBUtility();            
+
+            List<Vocabulary> vocabularies = new List<Vocabulary>();
+            vocabularies = dbUtiliy.GetVocabularies("Vocabulary");
+            foreach (var item in vocabularies)
+            {
+                string[] row = new string[] { item.ID.ToString(), item.Word, item.Meaning, item.Link };
+                VocabularyDataGridView.Rows.Add(row);                                
+            }
         }
 
         private void VocabularyDataGridView_SelectionChanged(object sender, EventArgs e)
-        {
+        {            
             int rowindex = VocabularyDataGridView.CurrentCell.RowIndex;
             VocabularyMetroTextBox.Text = null;
-            VocabularyMetroTextBox.AppendText("Vocabulary : " + VocabularyDataGridView.Rows[rowindex].Cells["VocabularyColumn"].Value.ToString() + Environment.NewLine);
-            VocabularyMetroTextBox.AppendText("Meaning : " + VocabularyDataGridView.Rows[rowindex].Cells["VocabularyMeaningColumn"].Value.ToString() + Environment.NewLine);
+            VocabularyMetroTextBox.AppendText("ID : "         + VocabularyDataGridView.Rows[rowindex].Cells["IDColumn"].Value.ToString() + Environment.NewLine);
+            VocabularyMetroTextBox.AppendText("Vocabulary : " + VocabularyDataGridView.Rows[rowindex].Cells["WordColumn"].Value.ToString() + Environment.NewLine);
+            VocabularyMetroTextBox.AppendText("Meaning : "    + VocabularyDataGridView.Rows[rowindex].Cells["MeaningColumn"].Value.ToString() + Environment.NewLine);
+            VocabularyMetroTextBox.AppendText("Link : "       + VocabularyDataGridView.Rows[rowindex].Cells["LinkColumn"].Value.ToString() + Environment.NewLine);            
         }
 
     }

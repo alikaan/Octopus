@@ -72,19 +72,30 @@ namespace Test
             dbUtiliy.InsertWord(word1);
             */
 
-            var account = dbUtiliy.FindAccountByID(1);
+            //var account = dbUtiliy.FindAccountByID(1);
 
-            Console.WriteLine($"{account.Email},{account.Username},{account.Password}");
+            //Console.WriteLine($"{account.Email},{account.Username},{account.Password}");
 
+            /*
             var tableNames = dbUtiliy.GetTables();
             foreach (var tableName in tableNames)
             {
                 Console.WriteLine($"{tableName}");
             }
+            */
+            List<Vocabulary> vocabularies = new List<Vocabulary>();
+            vocabularies = dbUtiliy.GetVocabularies("Vocabulary");
+            foreach (var item in vocabularies)
+            {
+                Console.WriteLine(item.ID);
+                Console.WriteLine(item.Word);
+                Console.WriteLine(item.Meaning);
+                Console.WriteLine(item.Link);
+                Console.WriteLine();
+            }           
+            //dbUtiliy.GetAllItmes("Vocabulary");
 
-            dbUtiliy.GetAllItmes("Vocabulary");
-
-            dbUtiliy.GetAllItmes("Account");
+            //dbUtiliy.GetAllItmes("Account");
 
 
             Console.ReadLine();

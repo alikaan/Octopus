@@ -29,60 +29,62 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.VocabularyMetroTextBox = new MetroFramework.Controls.MetroTextBox();
-            this.AddVocabularyMetroButton = new MetroFramework.Controls.MetroButton();
+            this.WordMetroTextBox = new MetroFramework.Controls.MetroTextBox();
+            this.AddWordMetroButton = new MetroFramework.Controls.MetroButton();
             this.label2 = new System.Windows.Forms.Label();
             this.MeaningMetroTextBox = new MetroFramework.Controls.MetroTextBox();
+            this.LinkMetroTextBox = new MetroFramework.Controls.MetroTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 100);
+            this.label1.Location = new System.Drawing.Point(67, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Vocabulary :";
+            this.label1.Text = "Word :";
             // 
-            // VocabularyMetroTextBox
-            // 
-            // 
+            // WordMetroTextBox
             // 
             // 
-            this.VocabularyMetroTextBox.CustomButton.Image = null;
-            this.VocabularyMetroTextBox.CustomButton.Location = new System.Drawing.Point(110, 1);
-            this.VocabularyMetroTextBox.CustomButton.Name = "";
-            this.VocabularyMetroTextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.VocabularyMetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.VocabularyMetroTextBox.CustomButton.TabIndex = 1;
-            this.VocabularyMetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.VocabularyMetroTextBox.CustomButton.UseSelectable = true;
-            this.VocabularyMetroTextBox.CustomButton.Visible = false;
-            this.VocabularyMetroTextBox.Lines = new string[0];
-            this.VocabularyMetroTextBox.Location = new System.Drawing.Point(140, 100);
-            this.VocabularyMetroTextBox.MaxLength = 32767;
-            this.VocabularyMetroTextBox.Name = "VocabularyMetroTextBox";
-            this.VocabularyMetroTextBox.PasswordChar = '\0';
-            this.VocabularyMetroTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.VocabularyMetroTextBox.SelectedText = "";
-            this.VocabularyMetroTextBox.SelectionLength = 0;
-            this.VocabularyMetroTextBox.SelectionStart = 0;
-            this.VocabularyMetroTextBox.ShortcutsEnabled = true;
-            this.VocabularyMetroTextBox.Size = new System.Drawing.Size(132, 23);
-            this.VocabularyMetroTextBox.TabIndex = 0;
-            this.VocabularyMetroTextBox.UseSelectable = true;
-            this.VocabularyMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.VocabularyMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // AddVocabularyMetroButton
             // 
-            this.AddVocabularyMetroButton.Location = new System.Drawing.Point(354, 266);
-            this.AddVocabularyMetroButton.Name = "AddVocabularyMetroButton";
-            this.AddVocabularyMetroButton.Size = new System.Drawing.Size(75, 23);
-            this.AddVocabularyMetroButton.TabIndex = 2;
-            this.AddVocabularyMetroButton.Text = "Add";
-            this.AddVocabularyMetroButton.UseSelectable = true;
-            this.AddVocabularyMetroButton.Click += new System.EventHandler(this.AddVocabularyMetroButton_Click);
+            this.WordMetroTextBox.CustomButton.Image = null;
+            this.WordMetroTextBox.CustomButton.Location = new System.Drawing.Point(110, 1);
+            this.WordMetroTextBox.CustomButton.Name = "";
+            this.WordMetroTextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.WordMetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.WordMetroTextBox.CustomButton.TabIndex = 1;
+            this.WordMetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.WordMetroTextBox.CustomButton.UseSelectable = true;
+            this.WordMetroTextBox.CustomButton.Visible = false;
+            this.WordMetroTextBox.Lines = new string[0];
+            this.WordMetroTextBox.Location = new System.Drawing.Point(140, 100);
+            this.WordMetroTextBox.MaxLength = 32767;
+            this.WordMetroTextBox.Name = "WordMetroTextBox";
+            this.WordMetroTextBox.PasswordChar = '\0';
+            this.WordMetroTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.WordMetroTextBox.SelectedText = "";
+            this.WordMetroTextBox.SelectionLength = 0;
+            this.WordMetroTextBox.SelectionStart = 0;
+            this.WordMetroTextBox.ShortcutsEnabled = true;
+            this.WordMetroTextBox.Size = new System.Drawing.Size(132, 23);
+            this.WordMetroTextBox.TabIndex = 0;
+            this.WordMetroTextBox.UseSelectable = true;
+            this.WordMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.WordMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // AddWordMetroButton
+            // 
+            this.AddWordMetroButton.Location = new System.Drawing.Point(354, 266);
+            this.AddWordMetroButton.Name = "AddWordMetroButton";
+            this.AddWordMetroButton.Size = new System.Drawing.Size(75, 23);
+            this.AddWordMetroButton.TabIndex = 2;
+            this.AddWordMetroButton.Text = "Add";
+            this.AddWordMetroButton.UseSelectable = true;
+            this.AddWordMetroButton.Click += new System.EventHandler(this.AddVocabularyMetroButton_Click);
             // 
             // label2
             // 
@@ -99,16 +101,16 @@
             // 
             // 
             this.MeaningMetroTextBox.CustomButton.Image = null;
-            this.MeaningMetroTextBox.CustomButton.Location = new System.Drawing.Point(183, 1);
+            this.MeaningMetroTextBox.CustomButton.Location = new System.Drawing.Point(219, 2);
             this.MeaningMetroTextBox.CustomButton.Name = "";
-            this.MeaningMetroTextBox.CustomButton.Size = new System.Drawing.Size(105, 105);
+            this.MeaningMetroTextBox.CustomButton.Size = new System.Drawing.Size(67, 67);
             this.MeaningMetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.MeaningMetroTextBox.CustomButton.TabIndex = 1;
             this.MeaningMetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.MeaningMetroTextBox.CustomButton.UseSelectable = true;
             this.MeaningMetroTextBox.CustomButton.Visible = false;
             this.MeaningMetroTextBox.Lines = new string[0];
-            this.MeaningMetroTextBox.Location = new System.Drawing.Point(140, 136);
+            this.MeaningMetroTextBox.Location = new System.Drawing.Point(140, 134);
             this.MeaningMetroTextBox.MaxLength = 32767;
             this.MeaningMetroTextBox.Multiline = true;
             this.MeaningMetroTextBox.Name = "MeaningMetroTextBox";
@@ -118,21 +120,63 @@
             this.MeaningMetroTextBox.SelectionLength = 0;
             this.MeaningMetroTextBox.SelectionStart = 0;
             this.MeaningMetroTextBox.ShortcutsEnabled = true;
-            this.MeaningMetroTextBox.Size = new System.Drawing.Size(289, 107);
+            this.MeaningMetroTextBox.Size = new System.Drawing.Size(289, 72);
             this.MeaningMetroTextBox.TabIndex = 1;
             this.MeaningMetroTextBox.UseSelectable = true;
             this.MeaningMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.MeaningMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // LinkMetroTextBox
+            // 
+            // 
+            // 
+            // 
+            this.LinkMetroTextBox.CustomButton.Image = null;
+            this.LinkMetroTextBox.CustomButton.Location = new System.Drawing.Point(247, 1);
+            this.LinkMetroTextBox.CustomButton.Name = "";
+            this.LinkMetroTextBox.CustomButton.Size = new System.Drawing.Size(41, 41);
+            this.LinkMetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.LinkMetroTextBox.CustomButton.TabIndex = 1;
+            this.LinkMetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.LinkMetroTextBox.CustomButton.UseSelectable = true;
+            this.LinkMetroTextBox.CustomButton.Visible = false;
+            this.LinkMetroTextBox.Lines = new string[0];
+            this.LinkMetroTextBox.Location = new System.Drawing.Point(140, 217);
+            this.LinkMetroTextBox.MaxLength = 32767;
+            this.LinkMetroTextBox.Multiline = true;
+            this.LinkMetroTextBox.Name = "LinkMetroTextBox";
+            this.LinkMetroTextBox.PasswordChar = '\0';
+            this.LinkMetroTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.LinkMetroTextBox.SelectedText = "";
+            this.LinkMetroTextBox.SelectionLength = 0;
+            this.LinkMetroTextBox.SelectionStart = 0;
+            this.LinkMetroTextBox.ShortcutsEnabled = true;
+            this.LinkMetroTextBox.Size = new System.Drawing.Size(289, 43);
+            this.LinkMetroTextBox.TabIndex = 5;
+            this.LinkMetroTextBox.UseSelectable = true;
+            this.LinkMetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.LinkMetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(73, 217);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Link :";
             // 
             // AddVocabularyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(452, 305);
+            this.Controls.Add(this.LinkMetroTextBox);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.MeaningMetroTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.AddVocabularyMetroButton);
-            this.Controls.Add(this.VocabularyMetroTextBox);
+            this.Controls.Add(this.AddWordMetroButton);
+            this.Controls.Add(this.WordMetroTextBox);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "AddVocabularyForm";
@@ -146,9 +190,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private MetroFramework.Controls.MetroTextBox VocabularyMetroTextBox;
-        private MetroFramework.Controls.MetroButton AddVocabularyMetroButton;
+        private MetroFramework.Controls.MetroTextBox WordMetroTextBox;
+        private MetroFramework.Controls.MetroButton AddWordMetroButton;
         private System.Windows.Forms.Label label2;
         private MetroFramework.Controls.MetroTextBox MeaningMetroTextBox;
+        private MetroFramework.Controls.MetroTextBox LinkMetroTextBox;
+        private System.Windows.Forms.Label label3;
     }
 }
