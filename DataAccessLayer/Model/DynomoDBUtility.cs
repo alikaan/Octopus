@@ -80,7 +80,7 @@ namespace DataAccessLayer.Model
                 });
                 Console.WriteLine($"HTTP Response : {response.Result.HttpStatusCode}");
                 System.Threading.Thread.Sleep(5000);
-                Console.WriteLine($"Table Status : {response.Result.TableDescription.TableStatus}");                                
+                Console.WriteLine($"Table Status : {response.Result.TableDescription.TableStatus}");
             }
             else
             {
@@ -89,7 +89,7 @@ namespace DataAccessLayer.Model
         }
         public async void InsertAccount(Account account)
         {
-            var context = new DynamoDBContext(DynomoClient);            
+            var context = new DynamoDBContext(DynomoClient);
             context.SaveAsync<Account>(account).Wait();
             await context.SaveAsync(account);
         }
@@ -98,7 +98,7 @@ namespace DataAccessLayer.Model
         {
             var context = new DynamoDBContext(DynomoClient);
             context.SaveAsync<Vocabulary>(word).Wait();
-            await context.SaveAsync(word);            
+            await context.SaveAsync(word);
         }
 
         public Account FindAccountByID(int id)
@@ -108,13 +108,13 @@ namespace DataAccessLayer.Model
             queryConditions.Add(new ScanCondition("ID", ScanOperator.Equal, id));
             var queryResult = context.ScanAsync<Account>(queryConditions).GetRemainingAsync();
             return queryResult.Result.FirstOrDefault();
-        }       
-        
+        }
+
         public void GetAllItmes(string tableName)
         {
             var request = new ScanRequest
             {
-                TableName = tableName,                
+                TableName = tableName,
             };
             //var context = new DynamoDBContext(DynomoClient);
             var response = DynomoClient.ScanAsync(request);
@@ -124,7 +124,7 @@ namespace DataAccessLayer.Model
                 Console.WriteLine("=====");
             }
         }
-        
+
         public static void PrintItem(Dictionary<string, AttributeValue> attrs)
         {
             foreach (KeyValuePair<string, AttributeValue> kvp in attrs)
@@ -132,7 +132,7 @@ namespace DataAccessLayer.Model
                 Console.Write(kvp.Key + " = ");
                 PrintValue(kvp.Value);
             }
-        }        
+        }
 
         public static void PrintValue(AttributeValue value)
         {

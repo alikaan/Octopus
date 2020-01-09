@@ -62,7 +62,7 @@
       <Name>BusinessLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
-      <Project>{f95c6510-f8cc-4236-a283-e0c5a5489925}</Project>
+      <Project>{86e2cf52-3587-4dcc-b530-005c1ebf6692}</Project>
       <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
