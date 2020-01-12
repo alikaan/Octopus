@@ -50,9 +50,22 @@ namespace Octopus
             }
             if(VocabularyAdd)
             {
+                DynomoDBUtility dbUtiliy = new DynomoDBUtility();
+
                 VocabularyAdd = false;
+                word.ID = 0;
+                foreach (DataGridViewRow item in VocabularyDataGridView.Rows)
+                {
+                    int maxID = Convert.ToInt32(item.Cells["IDColumn"].Value.ToString());
+                    if(maxID > word.ID)
+                    {
+                        word.ID = maxID;
+                    }
+                }
+                word.ID++;
                 string[] row = new string[] { word.ID.ToString(), word.Word, word.Meaning, word.Link };
                 VocabularyDataGridView.Rows.Add(row);
+                dbUtiliy.InsertWord(word);
                 // add new vocabulary here
             }
         }
@@ -94,15 +107,23 @@ namespace Octopus
 
         private void OctopusMainForm_Load(object sender, EventArgs e)
         {
-            DynomoDBUtility dbUtiliy = new DynomoDBUtility();            
-
-            List<Vocabulary> vocabularies = new List<Vocabulary>();
-            vocabularies = dbUtiliy.GetVocabularies("Vocabulary");
-            foreach (var item in vocabularies)
+            try
             {
-                string[] row = new string[] { item.ID.ToString(), item.Word, item.Meaning, item.Link };
-                VocabularyDataGridView.Rows.Add(row);                                
+                DynomoDBUtility dbUtiliy = new DynomoDBUtility();
+
+                List<Vocabulary> vocabularies = new List<Vocabulary>();
+                vocabularies = dbUtiliy.GetVocabularies("Vocabulary");
+                foreach (var item in vocabularies)
+                {
+                    string[] row = new string[] { item.ID.ToString(), item.Word, item.Meaning, item.Link };
+                    VocabularyDataGridView.Rows.Add(row);
+                }
             }
+            catch
+            {
+                MetroFramework.MetroMessageBox.Show(this, "message", "title", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void VocabularyDataGridView_SelectionChanged(object sender, EventArgs e)

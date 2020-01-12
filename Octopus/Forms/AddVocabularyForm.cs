@@ -20,18 +20,26 @@ namespace Octopus
 
         private void AddVocabularyMetroButton_Click(object sender, EventArgs e)
         {            
-            if (MetroFramework.MetroMessageBox.Show(this, "\n", "Octopus Dictionary | Add Vocabulary", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure about adding the word?\n", "Octopus Dictionary | Add Vocabulary", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
-                Vocabulary word = new Vocabulary
+                if(String.IsNullOrEmpty(WordMetroTextBox.Text) == false &&
+                    String.IsNullOrEmpty(MeaningMetroTextBox.Text) == false &&
+                    String.IsNullOrEmpty(LinkMetroTextBox.Text) == false )
                 {
-                    Word = "helo",
-                    Meaning = "hello",
-                    Link = "bla",
-                    ID = 4                    
-                };
-                OctopusMainForm.word = word;                
-                OctopusMainForm.VocabularyAdd = true;
-                this.Close();
+                    Vocabulary word = new Vocabulary
+                    {
+                        Word = WordMetroTextBox.Text,
+                        Meaning = MeaningMetroTextBox.Text,
+                        Link = LinkMetroTextBox.Text,
+                    };
+                    OctopusMainForm.word = word;
+                    OctopusMainForm.VocabularyAdd = true;
+                    this.Close();
+                }
+                else
+                {
+                    MetroFramework.MetroMessageBox.Show(this, "message", "title", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                }                              
             }        
         }
         

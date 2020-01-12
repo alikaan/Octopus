@@ -1,22 +1,22 @@
-﻿using System;
+﻿using BusinessLayer.Model;
+using DataAccessLayer.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataAccessLayer.Model;
-using BusinessLayer.Model;
 
-namespace Test
+namespace Octopus.Test
 {
     class Program
     {
         static void Main(string[] args)
         {
             /*
-            string awsKeyId = "AKIAR52JXGF333RW2HGL";
-            string awsKeySecret = "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";
-            string awsRegion = "us-east-1";
-            */
+           string awsKeyId = "AKIAR52JXGF333RW2HGL";
+           string awsKeySecret = "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";
+           string awsRegion = "us-east-1";
+           */
             Account alikaan = new Account
             {
                 ID = 0,
@@ -92,12 +92,9 @@ namespace Test
                 Console.WriteLine(item.Meaning);
                 Console.WriteLine(item.Link);
                 Console.WriteLine();
-            }           
+            }
             //dbUtiliy.GetAllItmes("Vocabulary");
-
             //dbUtiliy.GetAllItmes("Account");
-
-
             Console.ReadLine();
         }
     }

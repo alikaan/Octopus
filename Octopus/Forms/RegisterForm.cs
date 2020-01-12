@@ -16,6 +16,10 @@ namespace Octopus
         {
             InitializeComponent();
         }
-      
+
+        private void RegisterMetroButton_Click(object sender, EventArgs e)
+        {            
+
+        }
     }
 }
